@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   
   
-  <title>Hello World | TOPKA</title>
+  <title>电机学基础 | TOPKA</title>
   <meta name="author" content="zhikai" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -16,17 +16,24 @@
   
     <meta name="keywords" content="" />
   
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="简介：电力系统里的电流、电压通常都是交流变化的，建立在abc坐标系下，不太好定性分析，所以就建立另一个坐标系dq0，在dq0坐标系下电流和电压则是定值便于分析，这种坐标系的变换则是通过park变换来实现 d轴并不是x轴 q、d轴相差90度   重点部分  一般情况下电流的相位角是落后于电压的 且以电压为0轴  exsample    向量Id的角度这里计算有误，算成了Ud">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2022/09/19/hello-world/index.html">
+<meta property="og:title" content="电机学基础">
+<meta property="og:url" content="http://example.com/2022/10/04/%E7%94%B5%E6%9C%BA%E5%AD%A6%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="TOPKA">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="简介：电力系统里的电流、电压通常都是交流变化的，建立在abc坐标系下，不太好定性分析，所以就建立另一个坐标系dq0，在dq0坐标系下电流和电压则是定值便于分析，这种坐标系的变换则是通过park变换来实现 d轴并不是x轴 q、d轴相差90度   重点部分  一般情况下电流的相位角是落后于电压的 且以电压为0轴  exsample    向量Id的角度这里计算有误，算成了Ud">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-09-19T10:49:33.811Z">
-<meta property="article:modified_time" content="2022-09-19T10:49:33.811Z">
+<meta property="og:image" content="http://example.com/2022/10/04/%E7%94%B5%E6%9C%BA%E5%AD%A6%E5%9F%BA%E7%A1%80/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221003204403849.png">
+<meta property="og:image" content="http://example.com/2022/10/04/%E7%94%B5%E6%9C%BA%E5%AD%A6%E5%9F%BA%E7%A1%80/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221003205100539.png">
+<meta property="og:image" content="http://example.com/2022/10/04/%E7%94%B5%E6%9C%BA%E5%AD%A6%E5%9F%BA%E7%A1%80/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221003210817636.png">
+<meta property="og:image" content="http://example.com/2022/10/04/%E7%94%B5%E6%9C%BA%E5%AD%A6%E5%9F%BA%E7%A1%80/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221003213013811.png">
+<meta property="og:image" content="http://example.com/2022/10/04/%E7%94%B5%E6%9C%BA%E5%AD%A6%E5%9F%BA%E7%A1%80/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221003213030343.png">
+<meta property="og:image" content="http://example.com/2022/10/04/%E7%94%B5%E6%9C%BA%E5%AD%A6%E5%9F%BA%E7%A1%80/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221003213257122.png">
+<meta property="article:published_time" content="2022-10-04T01:35:45.002Z">
+<meta property="article:modified_time" content="2022-10-04T01:35:45.148Z">
 <meta property="article:author" content="zhikai">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/10/04/%E7%94%B5%E6%9C%BA%E5%AD%A6%E5%9F%BA%E7%A1%80/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221003204403849.png">
   
   <!-- 站点验证相关 -->
   
@@ -131,15 +138,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/19/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/04/%E7%94%B5%E6%9C%BA%E5%AD%A6%E5%9F%BA%E7%A1%80/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">Hello World</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">电机学基础</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2022-09-19T10:49:33.811Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-09-19</time></li>
+                <li><time datetime="2022-10-04T01:35:45.002Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-10-04</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">zhikai</span>
                 </li>
@@ -147,7 +154,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        444
+                        191
                     
                     字
                 </li>
@@ -158,24 +165,29 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1663584573811"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1664847345148"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             <hr />
-            <div itemprop="articleBody"><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+            <div itemprop="articleBody"><p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221003204403849.png" alt="image-20221003204403849"></p>
+<blockquote>
+<p>简介：电力系统里的电流、电压通常都是交流变化的，建立在abc坐标系下，不太好定性分析，所以就建立另一个坐标系dq0，在dq0坐标系下电流和电压则是定值便于分析，这种坐标系的变换则是通过park变换来实现</p>
+<p>d轴并不是x轴</p>
+<p>q、d轴相差90度</p>
+</blockquote>
+<p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221003205100539.png" alt="image-20221003205100539"></p>
+<h4 id="重点部分"><a href="#重点部分" class="headerlink" title="重点部分"></a>重点部分</h4><p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221003210817636.png" alt="image-20221003210817636"></p>
+<blockquote>
+<p>一般情况下电流的相位角是落后于电压的</p>
+<p>且以电压为0轴</p>
+</blockquote>
+<h4 id="exsample"><a href="#exsample" class="headerlink" title="exsample"></a>exsample</h4><p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221003213013811.png" alt="image-20221003213013811"></p>
+<p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221003213030343.png" alt="image-20221003213030343"></p>
+<p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221003213257122.png" alt="image-20221003213257122"></p>
+<blockquote>
+<p>向量Id的角度这里计算有误，算成了Ud</p>
+</blockquote>
 </div>
         </div>
         
@@ -229,7 +241,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "http://example.com/2022/09/19/hello-world/",
+                text: "http://example.com/2022/10/04/%E7%94%B5%E6%9C%BA%E5%AD%A6%E5%9F%BA%E7%A1%80/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -241,9 +253,13 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "http://example.com/2022/09/19/hello-world/";
-            const title         = "「Hello World」";
-            const excerpt       = `Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...`;
+            const hostUrl       = "http://example.com/2022/10/04/%E7%94%B5%E6%9C%BA%E5%AD%A6%E5%9F%BA%E7%A1%80/";
+            const title         = "「电机学基础」";
+            const excerpt       = `
+
+简介：电力系统里的电流、电压通常都是交流变化的，建立在abc坐标系下，不太好定性分析，所以就建立另一个坐标系dq0，在dq0坐标系下电流和电压则是定值便于分析，这种坐标系的变换则是通过park变换来实现
+d轴并不是x轴
+q、d轴相...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -265,7 +281,7 @@
                     
                 </div>
                 <div class="pull-date">
-                    <time datetime="2022-09-19T10:49:33.811Z" itemprop="dateModified">最后编辑：2022-09-19</time>
+                    <time datetime="2022-10-04T01:35:45.148Z" itemprop="dateModified">最后编辑：2022-10-04</time>
                 </div>
             </div>
         </footer>
@@ -273,9 +289,13 @@
     
         <nav class="navigation post-navigation clearfix" role="navigation">
             
+            <div class="nav-previous clearfix">
+                <a title=" 标幺值例题" href="/2022/10/03/标幺值例题/">&lt; 上一篇</a>
+            </div>
+            
             
             <div class="nav-next clearfix">
-                <a title=" 电力系统基础、线路变压器模型" href="/2022/09/26/1.电力系统基本组成/">下一篇 &gt;</a>
+                <a title=" 简单潮流计算1（Π型）" href="/2022/10/08/简单潮流计算1/">下一篇 &gt;</a>
             </div>
             
         </nav>

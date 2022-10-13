@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   
   
-  <title>Hello World | TOPKA</title>
+  <title>简单潮流计算2 | TOPKA</title>
   <meta name="author" content="zhikai" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -16,17 +16,28 @@
   
     <meta name="keywords" content="" />
   
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="┏型等效电路  例题： 总结：1、已知末端功率和末端电压  2、已知始端电压和末端功率 3、已知末端功率和首端电压 例题：    BC段的电压损耗公式是必须记住的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2022/09/19/hello-world/index.html">
+<meta property="og:title" content="简单潮流计算2">
+<meta property="og:url" content="http://example.com/2022/10/09/%E7%AE%80%E5%8D%95%E6%BD%AE%E6%B5%81%E8%AE%A1%E7%AE%972/index.html">
 <meta property="og:site_name" content="TOPKA">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="┏型等效电路  例题： 总结：1、已知末端功率和末端电压  2、已知始端电压和末端功率 3、已知末端功率和首端电压 例题：    BC段的电压损耗公式是必须记住的">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-09-19T10:49:33.811Z">
-<meta property="article:modified_time" content="2022-09-19T10:49:33.811Z">
+<meta property="og:image" content="http://example.com/2022/10/09/%E7%AE%80%E5%8D%95%E6%BD%AE%E6%B5%81%E8%AE%A1%E7%AE%972/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221009174147471.png">
+<meta property="og:image" content="http://example.com/2022/10/09/%E7%AE%80%E5%8D%95%E6%BD%AE%E6%B5%81%E8%AE%A1%E7%AE%972/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221009174206204.png">
+<meta property="og:image" content="http://example.com/2022/10/09/%E7%AE%80%E5%8D%95%E6%BD%AE%E6%B5%81%E8%AE%A1%E7%AE%972/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221009180430822.png">
+<meta property="og:image" content="http://example.com/2022/10/09/%E7%AE%80%E5%8D%95%E6%BD%AE%E6%B5%81%E8%AE%A1%E7%AE%972/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221009180917099.png">
+<meta property="og:image" content="http://example.com/2022/10/09/%E7%AE%80%E5%8D%95%E6%BD%AE%E6%B5%81%E8%AE%A1%E7%AE%972/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221009181104275.png">
+<meta property="og:image" content="http://example.com/2022/10/09/%E7%AE%80%E5%8D%95%E6%BD%AE%E6%B5%81%E8%AE%A1%E7%AE%972/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221009181300623.png">
+<meta property="og:image" content="http://example.com/2022/10/09/%E7%AE%80%E5%8D%95%E6%BD%AE%E6%B5%81%E8%AE%A1%E7%AE%972/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221009181333932.png">
+<meta property="og:image" content="http://example.com/2022/10/09/%E7%AE%80%E5%8D%95%E6%BD%AE%E6%B5%81%E8%AE%A1%E7%AE%972/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221009181908296.png">
+<meta property="og:image" content="http://example.com/2022/10/09/%E7%AE%80%E5%8D%95%E6%BD%AE%E6%B5%81%E8%AE%A1%E7%AE%972/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221009181942006.png">
+<meta property="og:image" content="http://example.com/2022/10/09/%E7%AE%80%E5%8D%95%E6%BD%AE%E6%B5%81%E8%AE%A1%E7%AE%972/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221009183130997.png">
+<meta property="article:published_time" content="2022-10-09T10:32:22.540Z">
+<meta property="article:modified_time" content="2022-10-11T17:19:46.473Z">
 <meta property="article:author" content="zhikai">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/10/09/%E7%AE%80%E5%8D%95%E6%BD%AE%E6%B5%81%E8%AE%A1%E7%AE%972/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221009174147471.png">
   
   <!-- 站点验证相关 -->
   
@@ -131,15 +142,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/19/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/09/%E7%AE%80%E5%8D%95%E6%BD%AE%E6%B5%81%E8%AE%A1%E7%AE%972/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">Hello World</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">简单潮流计算2</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2022-09-19T10:49:33.811Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-09-19</time></li>
+                <li><time datetime="2022-10-09T10:32:22.540Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-10-09</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">zhikai</span>
                 </li>
@@ -147,7 +158,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        444
+                        84
                     
                     字
                 </li>
@@ -158,24 +169,25 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1663584573811"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1665508786473"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             <hr />
-            <div itemprop="articleBody"><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+            <div itemprop="articleBody"><h3 id="┏型等效电路"><a href="#┏型等效电路" class="headerlink" title="┏型等效电路"></a>┏型等效电路</h3><p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221009174147471.png" alt="image-20221009174147471"></p>
+<p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221009174206204.png" alt="image-20221009174206204"></p>
+<h4 id="例题："><a href="#例题：" class="headerlink" title="例题："></a>例题：</h4><p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221009180430822.png" alt="image-20221009180430822"></p>
+<h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h4><h5 id="1、已知末端功率和末端电压"><a href="#1、已知末端功率和末端电压" class="headerlink" title="1、已知末端功率和末端电压"></a>1、已知末端功率和末端电压</h5><p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221009180917099.png" alt="image-20221009180917099"></p>
+<hr>
+<h5 id="2、已知始端电压和末端功率"><a href="#2、已知始端电压和末端功率" class="headerlink" title="2、已知始端电压和末端功率"></a>2、已知始端电压和末端功率</h5><p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221009181104275.png" alt="image-20221009181104275"></p>
+<h5 id="3、已知末端功率和首端电压"><a href="#3、已知末端功率和首端电压" class="headerlink" title="3、已知末端功率和首端电压"></a>3、已知末端功率和首端电压</h5><p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221009181300623.png" alt="image-20221009181300623"></p>
+<h4 id="例题：-1"><a href="#例题：-1" class="headerlink" title="例题："></a>例题：</h4><p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221009181333932.png" alt="image-20221009181333932"></p>
+<p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221009181908296.png" alt="image-20221009181908296"></p>
+<p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221009181942006.png" alt="image-20221009181942006"></p>
+<blockquote>
+<p>BC段的电压损耗公式是必须记住的</p>
+</blockquote>
+<p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221009183130997.png" alt="image-20221009183130997"></p>
 </div>
         </div>
         
@@ -229,7 +241,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "http://example.com/2022/09/19/hello-world/",
+                text: "http://example.com/2022/10/09/%E7%AE%80%E5%8D%95%E6%BD%AE%E6%B5%81%E8%AE%A1%E7%AE%972/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -241,9 +253,23 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "http://example.com/2022/09/19/hello-world/";
-            const title         = "「Hello World」";
-            const excerpt       = `Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...`;
+            const hostUrl       = "http://example.com/2022/10/09/%E7%AE%80%E5%8D%95%E6%BD%AE%E6%B5%81%E8%AE%A1%E7%AE%972/";
+            const title         = "「简单潮流计算2」";
+            const excerpt       = `┏型等效电路
+
+例题：
+总结：1、已知末端功率和末端电压
+
+2、已知始端电压和末端功率
+3、已知末端功率和首端电压
+例题：
+
+
+
+BC段的电压损耗公式是必须记住的
+
+
+`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -265,7 +291,7 @@
                     
                 </div>
                 <div class="pull-date">
-                    <time datetime="2022-09-19T10:49:33.811Z" itemprop="dateModified">最后编辑：2022-09-19</time>
+                    <time datetime="2022-10-11T17:19:46.473Z" itemprop="dateModified">最后编辑：2022-10-12</time>
                 </div>
             </div>
         </footer>
@@ -273,9 +299,13 @@
     
         <nav class="navigation post-navigation clearfix" role="navigation">
             
+            <div class="nav-previous clearfix">
+                <a title=" 简单潮流计算1（Π型）" href="/2022/10/08/简单潮流计算1/">&lt; 上一篇</a>
+            </div>
+            
             
             <div class="nav-next clearfix">
-                <a title=" 电力系统基础、线路变压器模型" href="/2022/09/26/1.电力系统基本组成/">下一篇 &gt;</a>
+                <a title=" CNN_LSTM注意力上的对比实验" href="/2022/10/13/CNN_LSTM注意力上的对比实验/">下一篇 &gt;</a>
             </div>
             
         </nav>

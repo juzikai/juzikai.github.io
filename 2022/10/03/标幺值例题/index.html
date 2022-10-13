@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   
   
-  <title>Hello World | TOPKA</title>
+  <title>标幺值例题 | TOPKA</title>
   <meta name="author" content="zhikai" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -16,17 +16,24 @@
   
     <meta name="keywords" content="" />
   
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="法一:统一基准值（归算低压侧参数）统一基准值，统一归算到高压侧 第一步：参数计算 第二步：低压侧归算到高压侧 第三步：根据设的基准值求标幺值 手写版：  法二：归算基准值（归算低压侧基准值）归算前后功率不变  归算后CD低压侧的基准值用归算后的基准值">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2022/09/19/hello-world/index.html">
+<meta property="og:title" content="标幺值例题">
+<meta property="og:url" content="http://example.com/2022/10/03/%E6%A0%87%E5%B9%BA%E5%80%BC%E4%BE%8B%E9%A2%98/index.html">
 <meta property="og:site_name" content="TOPKA">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="法一:统一基准值（归算低压侧参数）统一基准值，统一归算到高压侧 第一步：参数计算 第二步：低压侧归算到高压侧 第三步：根据设的基准值求标幺值 手写版：  法二：归算基准值（归算低压侧基准值）归算前后功率不变  归算后CD低压侧的基准值用归算后的基准值">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-09-19T10:49:33.811Z">
-<meta property="article:modified_time" content="2022-09-19T10:49:33.811Z">
+<meta property="og:image" content="http://example.com/2022/10/03/%E6%A0%87%E5%B9%BA%E5%80%BC%E4%BE%8B%E9%A2%98/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221003195851178.png">
+<meta property="og:image" content="http://example.com/2022/10/03/%E6%A0%87%E5%B9%BA%E5%80%BC%E4%BE%8B%E9%A2%98/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221003201440102.png">
+<meta property="og:image" content="http://example.com/2022/10/03/%E6%A0%87%E5%B9%BA%E5%80%BC%E4%BE%8B%E9%A2%98/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221003201453831.png">
+<meta property="og:image" content="http://example.com/2022/10/03/%E6%A0%87%E5%B9%BA%E5%80%BC%E4%BE%8B%E9%A2%98/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221003201949828.png">
+<meta property="og:image" content="http://example.com/2022/10/03/%E6%A0%87%E5%B9%BA%E5%80%BC%E4%BE%8B%E9%A2%98/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221003202123230.png">
+<meta property="og:image" content="http://example.com/2022/10/03/%E6%A0%87%E5%B9%BA%E5%80%BC%E4%BE%8B%E9%A2%98/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221003202529056.png">
+<meta property="article:published_time" content="2022-10-03T12:28:50.490Z">
+<meta property="article:modified_time" content="2022-10-03T12:42:41.922Z">
 <meta property="article:author" content="zhikai">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/10/03/%E6%A0%87%E5%B9%BA%E5%80%BC%E4%BE%8B%E9%A2%98/Users/%E6%A9%98%E5%AD%90%E5%A4%A7%E5%A4%A7/AppData/Roaming/Typora/typora-user-images/image-20221003195851178.png">
   
   <!-- 站点验证相关 -->
   
@@ -131,15 +138,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/19/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/03/%E6%A0%87%E5%B9%BA%E5%80%BC%E4%BE%8B%E9%A2%98/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">Hello World</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">标幺值例题</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2022-09-19T10:49:33.811Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-09-19</time></li>
+                <li><time datetime="2022-10-03T12:28:50.490Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-10-03</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">zhikai</span>
                 </li>
@@ -147,7 +154,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        444
+                        127
                     
                     字
                 </li>
@@ -158,24 +165,21 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1663584573811"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1664800961922"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             <hr />
-            <div itemprop="articleBody"><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+            <div itemprop="articleBody"><p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221003195851178.png" alt="image-20221003195851178"></p>
+<h3 id="法一-统一基准值（归算低压侧参数）"><a href="#法一-统一基准值（归算低压侧参数）" class="headerlink" title="法一:统一基准值（归算低压侧参数）"></a>法一:统一基准值（归算低压侧参数）</h3><p>统一基准值，统一归算到高压侧</p>
+<h5 id="第一步：参数计算"><a href="#第一步：参数计算" class="headerlink" title="第一步：参数计算"></a>第一步：参数计算</h5><p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221003201440102.png" alt="image-20221003201440102"></p>
+<h5 id="第二步：低压侧归算到高压侧"><a href="#第二步：低压侧归算到高压侧" class="headerlink" title="第二步：低压侧归算到高压侧"></a>第二步：低压侧归算到高压侧</h5><p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221003201453831.png" alt="image-20221003201453831"></p>
+<h5 id="第三步：根据设的基准值求标幺值"><a href="#第三步：根据设的基准值求标幺值" class="headerlink" title="第三步：根据设的基准值求标幺值"></a>第三步：根据设的基准值求标幺值</h5><p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221003201949828.png" alt="image-20221003201949828"></p>
+<p>手写版：</p>
+<p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221003202123230.png" alt="image-20221003202123230"></p>
+<h3 id="法二：归算基准值（归算低压侧基准值）"><a href="#法二：归算基准值（归算低压侧基准值）" class="headerlink" title="法二：归算基准值（归算低压侧基准值）"></a>法二：归算基准值（归算低压侧基准值）</h3><p>归算前后功率不变</p>
+<p><img src="Users\橘子大大\AppData\Roaming\Typora\typora-user-images\image-20221003202529056.png" alt="image-20221003202529056"></p>
+<p>归算后CD低压侧的基准值用归算后的基准值</p>
 </div>
         </div>
         
@@ -229,7 +233,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "http://example.com/2022/09/19/hello-world/",
+                text: "http://example.com/2022/10/03/%E6%A0%87%E5%B9%BA%E5%80%BC%E4%BE%8B%E9%A2%98/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -241,9 +245,18 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "http://example.com/2022/09/19/hello-world/";
-            const title         = "「Hello World」";
-            const excerpt       = `Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...`;
+            const hostUrl       = "http://example.com/2022/10/03/%E6%A0%87%E5%B9%BA%E5%80%BC%E4%BE%8B%E9%A2%98/";
+            const title         = "「标幺值例题」";
+            const excerpt       = `
+法一:统一基准值（归算低压侧参数）统一基准值，统一归算到高压侧
+第一步：参数计算
+第二步：低压侧归算到高压侧
+第三步：根据设的基准值求标幺值
+手写版：
+
+法二：归算基准值（归算低压侧基准值）归算前后功率不变
+
+归算后CD低压侧的基准...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -265,7 +278,7 @@
                     
                 </div>
                 <div class="pull-date">
-                    <time datetime="2022-09-19T10:49:33.811Z" itemprop="dateModified">最后编辑：2022-09-19</time>
+                    <time datetime="2022-10-03T12:42:41.922Z" itemprop="dateModified">最后编辑：2022-10-03</time>
                 </div>
             </div>
         </footer>
@@ -273,9 +286,13 @@
     
         <nav class="navigation post-navigation clearfix" role="navigation">
             
+            <div class="nav-previous clearfix">
+                <a title=" xx" href="/2022/09/26/xx/">&lt; 上一篇</a>
+            </div>
+            
             
             <div class="nav-next clearfix">
-                <a title=" 电力系统基础、线路变压器模型" href="/2022/09/26/1.电力系统基本组成/">下一篇 &gt;</a>
+                <a title=" 电机学基础" href="/2022/10/04/电机学基础/">下一篇 &gt;</a>
             </div>
             
         </nav>
